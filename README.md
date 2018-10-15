@@ -8,7 +8,7 @@ That is,
 > - ambiguity in how best to make these decisions and
 > - the researcher’s desire to find a statistically significant result.
 
-Here, we will see the pervasiveness of these two factors in analyzing data.
+Here, we will see the difficulty of these degrees of freedom when analyzing data.
 
 ## Background
 [Hypoxic Ischemic Encephalopathy (HIE)](https://www.birthinjuryguide.org/birth-injury/types/hypoxic-ischemic-encephalopathy-hie/) is a type of brain damage that occurs when an infant's brain doesn't receive enough oxygen and blood.
@@ -28,16 +28,13 @@ For the present study, there is a primary aim:
 
 **Aim 1:** Are copeptin and/or NSE associated with favorable neurological outcomes at two years post-HIE?
 
-To investigate this aim, we have sketched out an analysis plan.
+To investigate this aim, we have sketched out [an analysis plan]().
 After you have examined the listed relationships, we encourage you to conduct additional exploratory analyses to find associations between long-term neurodevelopmental outcome and any biomarker or other characteristic available in the dataset.
 
-Please record all code that you use in the associated [`hie_analysis.py`](https://github.com/reprocourse/template-a5-chaudhuri-practical/blob/master/hie_analysis.py) script.
+Please update [the analysis plan]() as you complete the assignment.
+Please also record all code that you generate in the associated [`hie_analysis.py`](https://github.com/reprocourse/template-a5-chaudhuri-practical/blob/master/hie_analysis.py) script.
 
-### Analysis plan
+## Useful resources
 
----
-1. Draft analysis plan for **Aim 1**.
-These includes table shells that you plan to fill (in (b)) and figures you would like to see/show (including potential sensitivity analyses).
-This will be similar in format to the "Methods" section of a journal article.
-The length should be minimum one paragraph to 1 page.
-- Analyze your data according to your plan and draft the corresponding "Results" section of your manuscript.
+Previously introduced  Python statistics packages are likely to be very helpful for this assignment.
+In particular, the [SciPy lecture notes on Statistics in Python](http://www.scipy-lectures.org/packages/statistics/index.html) and the [`statsmodels` getting starting guide](http://www.statsmodels.org/stable/gettingstarted.html) are good references for statistical analysis in Python.
