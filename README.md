@@ -28,10 +28,10 @@ For the present study, there is a primary aim:
 
 **Aim 1:** Are copeptin and/or NSE associated with favorable neurological outcomes at two years post-HIE?
 
-To investigate this aim, we have sketched out [an analysis plan]().
+To investigate this aim, we have sketched out [an analysis plan](https://github.com/reprocourse/template-a5-chaudhuri-practical/blob/master/analysis_plan.md).
 After you have examined the listed relationships, we encourage you to conduct additional exploratory analyses to find associations between long-term neurodevelopmental outcome and any biomarker or other characteristic available in the dataset.
 
-Please update [the analysis plan]() as you complete the assignment.
+Please update [the analysis plan](https://github.com/reprocourse/template-a5-chaudhuri-practical/blob/master/analysis_plan.md) as you complete the assignment.
 Please also record all code that you generate in the associated [`hie_analysis.py`](https://github.com/reprocourse/template-a5-chaudhuri-practical/blob/master/hie_analysis.py) script.
 
 ## Useful resources
