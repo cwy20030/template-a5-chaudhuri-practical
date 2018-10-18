@@ -1,0 +1,61 @@
+Install statsmodels.formula
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Quiz Time:
+
+How do you load numpy, pandas, statsmodels?
+
+
+How do you read a data frame?
+
+
+The python codes that you will need...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+from statsmodels.formula.api import OLS
+from statsmodels.formula.api import logit
+from statsmodels.formula.api import MNLogit
+
+outcome = hie.pH_6h
+outcome1 = hie.outcome
+predictor = hie.copeptine_6h_pmol_l
+predictor1 = hie.geneder_1_male
+
+
+
+model = OLS(outcome, predictor, missing='drop').fit()
+print(model.summary())
+
+
+
+model1 = MNLogit(outcome1, predictor,missing='drop').fit()
+print(model1.summary())
+
+
+
