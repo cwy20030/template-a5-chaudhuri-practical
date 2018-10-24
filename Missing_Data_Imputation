@@ -1,0 +1,37 @@
+import pandas as pd
+import numpy as np
+
+# Load in the dataset, appending 'nd' to the list of possible na_values
+hie = pd.read_csv('1-longitudinal-minimal data set-V2.csv', na_values='nd')
+
+
+# Change all the nds to NaN for further imputation
+hie = hie.replace('nd', np.NaN)
+
+#Imputation
+##Description:
+### There are many ways to impute missing values. By category, we can sort them down to 2 methods: 
+1) Simple Imputation             <----   Using only one method for data imputation 
+   - Pros: Simple and Fast!
+   - Cons: Bias the estimated parameter  
+
+
+2) Multiple Imputation           <----- Creating more than one rules or using more than one imputation methods          
+   - Pros: Reduce biases caused by imputation methods (the algorithm will try to provide a set of possible values)
+   - Cons: Often time, it can be complicated to deal with the estimated data sets.
+
+
+Imputation with mean, medians, regression imputation, interpolation and extrapolation:
+#We will show you how to do mean, median and assign a specific value to each column:
+
+hie.fillna(hie.mean(),inplace=True)
+
+hie.fillna(hie.median(), inplace=True)
+
+hie.fillna({'Sepeptin_6hr':0, 'Sepeptin_12hr':0}, inplace=True) 
+
+
+for idx in hie.index:
+if pd.isnull(hie.loc[idx,"TARGET_VARIABLE"]): 
+x = hie.loc[idx,"Predictor"] 
+hie.loc[idx,"TARGET_VARIABLE"] = (β * Predictor + c)
